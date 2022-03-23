@@ -1,0 +1,7 @@
+select id
+      , ceo
+      , motto
+      , sum(employees) as employees
+from companies 
+group by id
+order by employees desc
